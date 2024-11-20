@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uni-Sis</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <header>
+    <h1>Uni-Sis</h1>
+    <nav>
+        <ul>
+            <li><a href="11eleventhPage.html">Home</a></li>
+            <li><a href="20twentiethPage.html">Academic Calendar</a></li>
+        </ul>
+    </nav>
+    <section class="student-name">      
+        <div class="dropdown">
+            <img src="user.jpeg" width=35px; height=35px;>  
+            <h1>Academic Staff Name</h1>
+            <div class="dropdown-content">
+                <button onclick="redirectToLoginPage()">Logout</button>
+            </div>
+        </div>
+    </section>
+</header>
+<div class="small-menu">
+    <h3>Admin</h3>
+    <button onclick="redirectToStudentList()">Student List</button>
+    <button onclick="redirectToStudentInfo()">Students' Information</button>
+    <button onclick="redirectToUpdateStudent()">Updating Students</button>
+    <button onclick="redirectToUpdateLesson()">Updating Lessons</button>
+</div>
+
+<main>
+    <div class="updating-lesson">
+        <h1> Updating Lessons</h1>
+        <input type="text" placeholder=" Lesson Search" style="width: 300px; height: 30px; border: 1px solid black; border-radius: 15px; margin-bottom: 10px;">
+        <table>
+            <thead>
+                <tr>
+                    <th> ECTS</th>
+                    <th> LOCAL CREDIT</th>
+                    <th> SLOT NAME</th>
+                    <th> COURSE NAME</th>
+                    <th> </th>
+                </tr>   
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1</td>
+                    <td> 1</td>
+                    <td> ENGR4901</td>
+                    <td> Introduction to Design Projects</td>
+                    <td><button class="edit-button" onclick="editLesson('ENGR4901')">Edit</button></td>
+                </tr>
+                <tr>
+                    <td> 1</td>
+                    <td> 1</td>
+                    <td> COMP1007</td>
+                    <td> Introduction to Computer and Software Engineering</td>
+                    <td><button class="edit-button" onclick="editLesson('COMP1007')">Edit</button></td>
+                </tr>
+                <tr>
+                    <td> 1 </td>
+                    <td> 0</td>
+                    <td> COMP4910</td>
+                    <td> Summer Practice II</td>
+                    <td><button class="edit-button" onclick="editLesson('COMP4910')">Edit</button></td>
+                </tr>
+
+                <tr>
+                    <td> 1 </td>
+                    <td> 0</td>
+                    <td> COMP3910</td>
+                    <td> Summer Practice I</td>
+                    <td><button class="edit-button" onclick="editLesson('COMP3910')">Edit</button></td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    
+
+</main>
+
+
+<!-- Add JavaScript for dropdown functionality -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Get the dropdown element
+        var facultyDropdown = document.getElementById('student-select');
+
+        // Add an event listener to handle changes in the selected faculty
+        facultyDropdown.addEventListener('change', function () {
+            // You can add logic here to update the displayed schedule based on the selected faculty
+            // For now, let's just alert the selected faculty
+            alert('Selected Student: ' + facultyDropdown.value);
+        });
+    });
+
+    function editLesson(lessonName) {
+        alert('Edit clicked for lesson: ' + lessonName);
+        // Add your edit logic here
+    }
+
+</script>
+
+<script>
+    function redirectToLoginPage() {
+        window.location.href = '1loginPage.html';
+    }
+    function redirectToStudentList() {
+        window.location.href = '12twelfthPage.html';
+    }
+    function redirectToStudentInfo() {
+        window.location.href = '13thirteenthPage.html';
+    }
+    function redirectToUpdateStudent() {
+        window.location.href = '14fourteenthPage.html';
+    }
+    function redirectToUpdateLesson() {
+        window.location.href = '15fifteenthPage.html';
+    }
+</script>
+</body>
+</html>

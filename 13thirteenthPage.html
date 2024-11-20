@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uni-Sis</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <header>
+    <h1>Uni-Sis</h1>
+    <nav>
+        <ul>
+            <li><a href="11eleventhPage.html">Home</a></li>
+            <li><a href="20twentiethPage.html">Academic Calendar</a></li>
+        </ul>
+    </nav>
+    <section class="student-name">      
+        <div class="dropdown">
+            <img src="user.jpeg" width=35px; height=35px;>  
+            <h1>Admin Name</h1>
+            <div class="dropdown-content">
+                <button onclick="redirectToLoginPage()">Logout</button>
+            </div>
+        </div>
+    </section>
+</header>
+<div class="small-menu">
+    <h3>Admin</h3>
+    <button onclick="redirectToStudentList()">Student List</button>
+    <button onclick="redirectToStudentInfo()">Students' Information</button>
+    <button onclick="redirectToUpdateStudent()">Updating Students</button>
+    <button onclick="redirectToUpdateLesson()">Updating Lessons</button>
+</div>
+
+<main>
+    <div class="student-info-page">
+        <h1> Students' Information</h1>
+        <input type="text" placeholder=" Student Search" style="width: 300px; height: 30px; border: 1px solid black; border-radius: 15px; margin-bottom: 10px;">
+        <table>
+            <thead>
+                <tr>
+                    <th> Informatıon</th>
+                    <th></th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Name & Surname</td>
+                    <td> Batuhan Özgün</td>
+                </tr>
+                <tr>
+                    <td> ID Number</td>
+                    <td> 1796931****</td>
+                </tr>
+                <tr>
+                    <td> Gender</td>
+                    <td> ERKEK</td>
+                </tr>
+
+                <tr>
+                    <td> University E-mail</td>
+                    <td> 218cs2081@unisis.com</td>
+                </tr>
+
+                <tr>
+                    <td> Faculty</td>
+                    <td> Faculty of Engineering and Natural Sciences</td>
+                </tr>
+                <tr>
+                    <td> Department / Program</td>
+                    <td> Computer Science Engineering </td>
+                </tr>
+                <tr>
+                    <td> Standing</td>
+                    <td> UG-SENIOR ( 4)</td>
+                </tr>
+                <tr>
+                    <td> Program Entry Year&Semester</td>
+                    <td> 2019 & SPRING</td>
+                </tr>
+                <tr>
+                    <td> Advisor</td>
+                    <td> AYŞEGÜL TÜYSÜZ ERMAN (aysegul.erman@isikun.edu.tr)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    
+
+</main>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var facultyDropdown = document.getElementById('student-select');
+        facultyDropdown.addEventListener('change', function () {
+            alert('Selected Student: ' + facultyDropdown.value);
+        });
+    });
+</script>
+<script>
+    function redirectToLoginPage() {
+        window.location.href = '1loginPage.html';
+    }
+    function redirectToStudentList() {
+        window.location.href = '12twelfthPage.html';
+    }
+    function redirectToStudentInfo() {
+        window.location.href = '13thirteenthPage.html';
+    }
+    function redirectToUpdateStudent() {
+        window.location.href = '14fourteenthPage.html';
+    }
+    function redirectToUpdateLesson() {
+        window.location.href = '15fifteenthPage.html';
+    }
+</script>
+
+</body>
+</html>

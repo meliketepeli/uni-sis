@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uni-Sis</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <header>
+    <h1>Uni-Sis</h1>
+    <nav>
+        <ul>
+            <li><a href="4fourthPage.html">Home</a></li>
+            <li><a href="9ninethPage.html">Academic Calendar</a></li>
+            <li><a href="10tenthPage.html">Course Schedule</a></li>
+        </ul>
+    </nav>
+    <section class="student-name">      
+        <div class="dropdown">
+            <img src="user.jpeg" width=35px; height=35px;>  
+            <h1>Student Name</h1>
+            <div class="dropdown-content">
+                <button onclick="redirectToLoginPage()">Logout</button>
+            </div>
+        </div>
+    </section>
+</header>
+
+<div class="small-menu">
+    <h3>Student</h3>
+    <button onclick="redirectToPersonalInformation()">My Page</button>
+    <button onclick="redirectToCurriculum()">My Curriculum</button>
+    <button onclick="redirectToWeeklySchedule()">My Weekly Schedule</button>
+    <button onclick="redirectToTranskript()">My Transcript</button>
+    <button onclick="redirectToCoursePools()">Course Pools</button>
+    <button onclick="redirectToRegistration()">Registration</button>
+</div>
+<main>
+    <div class="trascript-table">
+        <h1> Transcript</h1>
+        <table>
+            <td colspan="8" style=" text-align:center; background-color:azure; color: rgb(3, 40, 227); font-size : 16px"><b>Spring 2020</b></td>            
+                <tr>
+                    <th> Course Code</th>                    
+                    <th>Course Title</th>
+                    <th>Course Credit</th>
+                    <th>Status</th>
+                    <th>Taken for</th>
+                    <th>letter Grade</th>
+                    <th>Points Earned</th>
+                </tr>                
+            
+            <tbody>
+                <tr>
+                    <td>COMP1111</td>
+                    <td> FUNDAMENTALS OF PROGRAMMING</td>
+                    <td> 6</td>
+                    <td> C</td>
+                    <td> COMP1111</td>
+                    <td> F</td>
+                    <td> 0</td>
+                </tr>
+                <tr>
+                    <td>PHYS1103</td>
+                    <td> PHYSICS LABORATORY 1</td>
+                    <td> 2</td>
+                    <td> C</td>
+                    <td> PHYS1103</td>
+                    <td> BB</td>
+                    <td> 6</td>
+                </tr>
+                <tr>
+                    <td>ECON1005</td>
+                    <td> INTRODUCTION TO ECONOMICS</td>
+                    <td> 5</td>
+                    <td> C</td>
+                    <td> ECON1005</td>
+                    <td> CB</td>
+                    <td> 12.5</td>
+                </tr>
+                <tr>
+                    <td>PHYS1101</td>
+                    <td> GENERAL PHYSICS 1</td>
+                    <td> 6</td>
+                    <td> C</td>
+                    <td> PHYS1101</td>
+                    <td> BB</td>
+                    <td> 18</td>
+                </tr>
+                <tr>
+                    <td>MATH1101</td>
+                    <td> CALCULUS 1</td>
+                    <td> 6</td>
+                    <td> C</td>
+                    <td> MATH1101</td>
+                    <td> CB</td>
+                    <td> 15</td>
+                </tr>
+                <tr>
+                    <td>ENGL1102</td>
+                    <td> ACADEMIC ENGLISH 2</td>
+                    <td> 4</td>
+                    <td> C</td>
+                    <td> ENGL1102</td>
+                    <td> AA</td>
+                    <td> 16</td>
+                </tr>
+                <tr>
+                    <td>ITEC1001</td>
+                    <td> COMPUTER LITERACY</td>
+                    <td> 1</td>
+                    <td> C</td>
+                    <td> ITEC1001</td>
+                    <td> AA</td>
+                    <td> 4</td>
+                </tr>
+                <tr>
+                    <td>SPA: 2.38</td>
+                    <td> CREDIT ATTEMPTED: 30</td>
+                    <td> CREDIT COMPLETED: 24</td>
+                    <td> POINTS EARNED: 71.5</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>GPA: 2.38</td>
+                    <td> TOTAL CREDIT ATTEMPTED: 30</td>
+                    <td> TOTAL CREDIT COMPLETED: 24</td>
+                    <td> TOTAL POINTS EARNED: 71.5</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+<script>
+    function redirectToLoginPage() {
+        window.location.href = '1loginPage.html';
+    }
+    function redirectToPersonalInformation() {
+        window.location.href = '3thirdPage.html';
+    }
+    function redirectToCurriculum() {
+        window.location.href = '5fifthPage.html';
+    }
+    function redirectToWeeklySchedule() {
+        window.location.href = '6sixthPage.html';
+    }
+    function redirectToTranskript() {
+        window.location.href = '7seventhPage.html';
+    }
+    function redirectToCoursePools() {
+        window.location.href = '8eightPage.html';
+    }
+    function redirectToRegistration() {
+        window.location.href = '19nineteenthPage.html';
+    }
+</script>
+</body>
+</html>

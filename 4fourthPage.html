@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uni-Sis</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="background-image"></div>
+<header>
+    <h1>Uni-Sis</h1>
+    <nav>
+        <ul>
+            <li><a href="4fourthPage.html">Home</a></li>
+            <li><a href="9ninethPage.html">Academic Calendar</a></li>
+            <li><a href="10tenthPage.html">Course Schedule</a></li>
+        </ul>
+    </nav>
+    <section class="student-name">      
+        <div class="dropdown">
+            <img src="user.jpeg" width=35px; height=35px;>  
+            <h1>Student Name</h1>
+            <div class="dropdown-content">
+                <button onclick="redirectToLoginPage()">Logout</button>
+            </div>
+        </div>
+    </section>
+</header>
+<div class="small-menu">
+    <h3>Student</h3>
+    <button onclick="redirectToPersonalInformation()">My Page</button>
+    <button onclick="redirectToCurriculum()">My Curriculum</button>
+    <button onclick="redirectToWeeklySchedule()">My Weekly Schedule</button>
+    <button onclick="redirectToTranskript()">My Transcript</button>
+    <button onclick="redirectToCoursePools()">Course Pools</button>
+    <button onclick="redirectToRegistration()">Registration</button>
+    
+</div>
+<main>
+</main>
+<script>
+    function redirectToLoginPage() {
+        window.location.href = '1loginPage.html';
+    }
+    function redirectToPersonalInformation() {
+        window.location.href = '3thirdPage.html';
+    }
+    function redirectToCurriculum() {
+        window.location.href = '5fifthPage.html';
+    }
+    function redirectToWeeklySchedule() {
+        window.location.href = '6sixthPage.html';
+    }
+    function redirectToTranskript() {
+        window.location.href = '7seventhPage.html';
+    }
+    function redirectToCoursePools() {
+        window.location.href = '8eightPage.html';
+    }
+    function redirectToRegistration() {
+        window.location.href = '19nineteenthPage.html';
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Uni-Sis</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+
+<body style="background-image: url('image3.jpeg'); background-size: cover; background-position: center;">
+    <header>
+        <h1>Uni-Sis</h1>
+    </header>
+    <div class="login-section">
+        <h1>Login</h1>
+        <form class="login-form" onsubmit="login(event)">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        function login(event) {
+            event.preventDefault();
+            
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            
+            if (email === 'batuhan@unisis.com' && password === '12345') {
+                
+                window.location.href = '4fourthPage.html';
+                }
+            if (email === 'admin@unisis.com' && password === '12345') {
+                
+                window.location.href = '11eleventhPage.html';
+                    }
+            if (email === 'academic@unisis.com' && password === '12345') {
+                window.location.href = '16sixteenthPage.html';
+                        }else {
+                alert('Invalid email or password. Please try again.');
+            }
+        }
+    </script>
+</body>
+</html>

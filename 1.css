@@ -1,0 +1,554 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    background-image: url('image2.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: #1b4b72;
+    padding: 1rem;
+    position: relative;
+    z-index: 1;   
+}
+
+header h1 {
+    color: white;
+    display: inline;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav ul {
+    display: inline;
+    list-style-type: none;
+    padding: 0px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-right:150px;
+}
+
+main {
+    margin-left: 20%;
+    padding: 1rem;
+}
+
+.student-name {
+    margin-bottom: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+.dropdown img {
+    border-radius: 20px;
+    margin-top:-2px;
+}
+
+.student-name button{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px; 
+    box-sizing: border-box;
+    border-radius: 1px;
+    background-color:#ddd;
+} 
+.dropdown {
+    position:relative;
+    display: flex; 
+    align-items: center;
+    
+}
+.dropdown h1 {
+    color: white; 
+    margin-left:5px;
+    align-items: center; 
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%; 
+    left: 0;
+}
+.dropdown-content button {
+    width: 100%;
+    text-align: center;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.student-name h2 {
+    display: inline;
+    margin-right: 1rem;
+}
+
+.weekly-schedule-tablo {
+    float: right;
+    width: 95%; 
+    margin-top: 1rem;
+}
+
+.weekly-schedule-tablo table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.weekly-schedule-tablo th, .weekly-schedule-tablo td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.weekly-schedule-tablo th {
+    background-color: #1b4b72;
+    color: white;
+}
+.login-section {
+    margin: 10% auto;
+    width: 30%;
+    text-align: center;
+}
+
+.login-section h1 {
+    color: #1b4b72;
+    margin-bottom: 1rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form input {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 80%;
+}
+
+.login-form button {
+    background-color: #1b4b72;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.small-menu {
+    background-color: #1b4b72;
+    padding: 1rem;
+    width: 15%; 
+    position: absolute;
+    left: 0;
+    top: 97px;
+    height:500px;
+}
+.small-menu h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.small-menu button {
+    background-color: #3b8cba;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.3rem 1rem;
+    text-align: left;
+    width: 90%;
+}
+.info-page {
+    float: right;
+    width: 95%; 
+    margin-top: 1rem;
+    position: relative;
+}
+.info-page img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 1rem;
+}
+
+.info-page table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-page th, .info-page td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.info-page th {
+    background-color: #1b4b72;
+    color: white;
+}
+.curriculum-schedule {
+    float: right;
+    width: 95%; 
+    margin-top: 1rem;
+}
+
+.curriculum-schedule table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.curriculum-schedule th, .curriculum-schedule td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.curriculum-schedule th {
+    background-color: #1b4b72;
+    color: white;
+}
+
+.trascript-table {
+    float: right;
+    width: 95%; 
+    margin-top: 1rem;
+}
+
+.trascript-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trascript-table th, .trascript-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.trascript-table th {
+    background-color: #1b4b72;
+    color: white;
+}
+.curriculum-slots {
+    float: right;
+    width: 95%; 
+    margin-top: 1rem;
+}
+
+.curriculum-slots table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.curriculum-slots th, .curriculum-slots td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.curriculum-slots th {
+    background-color: #1b4b72;
+    color: white;
+}
+
+.faculty-dropdown {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+.faculty-dropdown select {
+        padding: 0.3rem;
+        width: 200px; 
+    }
+.academic-schedule {
+        float: right;
+        width: 95%; 
+        margin-top: 1rem;
+    }
+    
+.academic-schedule table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+.academic-schedule th, .academic-schedule td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    
+.academic-schedule th {
+        background-color: #1b4b72;
+        color: white;
+    }
+    
+.current-course-schedule {
+    float: right;
+    width: 95%; 
+    margin-top: 1rem;
+}
+
+.current-course-schedule table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.current-course-schedule th, .current-course-schedule td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.current-course-schedule th {
+    background-color: #1b4b72;
+    color: white;
+}
+.admin-page {
+    float: right;
+    width: 95%; 
+    margin-top: 1rem;
+}
+
+.admin-page table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-page th, .admin-page td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.admin-page th {
+    background-color: #1b4b72;
+    color: white;
+}
+.student-list {
+    float: right;
+    width: 95%; 
+    margin-top: 1rem;
+}
+
+.student-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.student-list th, .student-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.student-list th {
+    background-color: #1b4b72;
+    color: white;
+}
+
+.student-info-page {
+    float: right;
+    width: 95%; 
+    margin-top: 1rem;
+}
+
+.student-info-page table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.student-info-page th, .student-info-page td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.student-info-page th {
+    background-color: #1b4b72;
+    color: white;
+}
+
+.updating-students {
+    float: right;
+    width: 95%; 
+    margin-top: 1rem;
+}
+
+.updating-students table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.updating-students th, .updating-students td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.updating-students th {
+    background-color: #1b4b72;
+    color: white;
+}
+.edit-button {
+        background-color: #1b4b72;
+        color: white;
+        padding: 6px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+.student-dropdown {
+        margin-top: 1rem;
+    }
+
+.student-dropdown select {
+        padding: 0.3rem;
+        width: 200px; 
+    }
+
+.updating-lesson {
+        float: right;
+        width: 95%; 
+        margin-top: 1rem;
+    }
+    
+.updating-lesson table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+.updating-lesson th, .updating-lesson td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    
+.updating-lesson th {
+        background-color: #1b4b72;
+        color: white;
+    }
+.edit-button {
+            background-color: #1b4b72;
+            color: white;
+            padding: 6px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+.student-dropdown {
+            margin-top: 1rem;
+            margin-bottom:10px;
+        }
+    
+.student-dropdown select {
+            padding: 0.3rem;
+            width: 200px; 
+        }
+    
+.lesson-given {
+            float: right;
+            width: 95%; 
+            margin-top: 1rem;
+        }
+        
+.lesson-given table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+.lesson-given th, .lesson-given td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+.lesson-given th {
+            background-color: #1b4b72;
+            color: white;
+        }
+.edit-button {
+                background-color: #1b4b72;
+                color: white;
+                padding: 6px 10px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+.student-dropdown {
+                margin-top: 1rem;
+            }
+        
+.student-dropdown select {
+                padding: 0.3rem;
+                width: 200px; 
+            }
+
+
+.point-editing {
+                float: right;
+                width: 95%;
+                margin-top: 1rem;
+            }
+            
+.point-editing table {
+     width: 100%;
+     border-collapse: collapse;
+            }
+            
+.point-editing th, .point-editing td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+            }
+            
+.point-editing th {
+    background-color: #1b4b72;
+    color: white;
+        }
+.edit-button {
+    background-color: #1b4b72;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+.student-dropdown {
+    margin-top: 1rem;
+        }
+            
+.student-dropdown select {
+    padding: 0.3rem;
+    width: 200px; 
+        }
+
+            

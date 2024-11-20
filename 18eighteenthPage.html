@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uni-Sis</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <header>
+    <h1>Uni-Sis</h1>
+    <nav>
+        <ul>
+            <li><a href="16sixteenthPage.html">Home</a></li>
+            <li><a href="21twentyfirstthPage.html">Academic Calendar</a></li>
+       
+        </ul>
+    </nav>
+    <section class="student-name">      
+        <div class="dropdown">
+            <img src="user.jpeg" width=35px; height=35px;>  
+            <h1>Academic Staff Name</h1>
+            <div class="dropdown-content">
+                <button onclick="redirectToLoginPage()">Logout</button>
+            </div>
+        </div>
+    </section>
+</header>
+<div class="small-menu">
+    <h3>Academic Staff</h3>
+    <button onclick="redirectToOwnLessonGiven()">Own Lessons Given</button>
+    <button onclick="redirectToPointEditing()">Point Editing</button>
+    <button onclick="redirectToStudentsInformation()">Students' Information</button>    
+</div>
+
+<main>
+    <div class="point-editing">
+        <h1> Point Editing</h1>
+        <input type="text" placeholder=" Search Lesson" style="width: 300px; height: 30px; border: 1px solid black; border-radius: 15px; margin-bottom: 10px;">
+        <table>
+            <thead>
+                <tr>
+                    <th> ECTS</th>
+                    <th> LOCAL CREDIT</th>
+                    <th> SLOT NAME</th>
+                    <th> COURSE NAME</th>
+                    <th> </th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1</td>
+                    <td> 1</td>
+                    <td> ENGR4901</td>
+                    <td> Introduction to Design Projects</td>
+                    <td><button class="edit-button" onclick="editLesson('ENGR4901')">Edit</button></td>
+                </tr>
+                <tr>
+                    <td> 1</td>
+                    <td> 1</td>
+                    <td> COMP1007</td>
+                    <td> Introduction to Computer and Software Engineering</td>
+                    <td><button class="edit-button" onclick="editLesson('COMP1007')">Edit</button></td>
+                </tr>
+                <tr>
+                    <td> 1 </td>
+                    <td> 0</td>
+                    <td> COMP4910</td>
+                    <td> Summer Practice II</td>
+                    <td><button class="edit-button" onclick="editLesson('COMP4910')">Edit</button></td>
+                </tr>
+
+                <tr>
+                    <td> 1 </td>
+                    <td> 0</td>
+                    <td> COMP3910</td>
+                    <td> Summer Practice I</td>
+                    <td><button class="edit-button" onclick="editLesson('COMP3910')">Edit</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="point-editing">
+        <h1>  </h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th> COMP1007</th>
+                    <th> </th>
+                    <th> MT-1</th>
+                    <th> MT-2</th>
+                    <th> FINAL</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td> BATUHAN ÖZGÜN</td>
+                    <td> 218CS2081</td>
+                    <td> 60</td>
+                    <td> -</td>
+                    <td> -</td>
+                </tr>
+                <tr>
+                    <td> MELİKE TEPELİ</td>
+                    <td> 20COMP1012</td>
+                    <td> 60</td>
+                    <td> -</td>
+                    <td> -</td>
+                </tr>
+                <tr>
+                    <td> CEREN ÖZDEN</td>
+                    <td> 19COMP1040</td>
+                    <td> 60</td>
+                    <td> -</td>
+                    <td> -</td>
+                </tr>
+                <tr>
+                    <td> -</td>
+                    <td> -</td>
+                    <td> -</td>
+                    <td> -</td>
+                    <td> -</td>
+                </tr>
+                <tr>
+                    <td> -</td>
+                    <td> -</td>
+                    <td> -</td>
+                    <td> -</td>
+                    <td> -</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</main>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var facultyDropdown = document.getElementById('student-select');
+        facultyDropdown.addEventListener('change', function () {
+            alert('Selected Student: ' + facultyDropdown.value);
+        });
+    });
+
+    function editLesson(lessonName) {
+        alert('Edit clicked for lesson: ' + lessonName);
+    }
+
+</script>
+<script>
+    function redirectToLoginPage() {
+        window.location.href = '1loginPage.html';
+    }
+    function redirectToOwnLessonGiven() {
+        window.location.href = '17seventeenth.html';
+    }
+    function redirectToPointEditing() {
+        window.location.href = '18eighteenthPage.html';
+    }
+    function redirectToStudentsInformation() {
+        window.location.href = '13thirteenthPage.html';
+    }
+</script>
+</body>
+</html>

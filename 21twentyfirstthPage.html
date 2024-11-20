@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uni-Sis</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <header>
+    <h1>Uni-Sis</h1>
+    <nav>
+        <ul>
+            <li><a href="16sixteenthPage.html">Home</a></li>
+            <li><a href="21twentyfirstthPage.html">Academic Calendar</a></li>
+        </ul>
+    </nav>
+    <section class="student-name">      
+        <div class="dropdown">
+            <img src="user.jpeg" width=35px; height=35px;>  
+            <h1>Academic Staff Name</h1>
+            <div class="dropdown-content">
+                <button onclick="redirectToLoginPage()">Logout</button>
+            </div>
+        </div>
+    </section>
+</header>
+<div class="small-menu">
+    <h3>Academic Staff Name</h3>
+    <button onclick="redirectToOwnLessonGiven()">Own Lessons Given</button>
+    <button onclick="redirectToPointEditing()">Point Editing</button>
+    <button onclick="redirectToStudentInfo()">Students' Information</button>
+</div>
+<main>
+    <div class="academic-schedule">
+        <h1> Academic Calendar</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th> Date</th>
+                    <th> Event</th>
+                </tr>
+                
+            </thead>
+            <tbody>              
+                <tr>
+                    <td>27.09.2024</td>
+                    <td> OPENING CEREMONY</td>
+                </tr>
+                <tr>
+                    <td>28.09.2024</td>
+                    <td> FIRST LESSON</td>
+                </tr>
+                <tr>
+                    <td>30.10.2024-07.11.2024</td>
+                    <td> MIDTERM WEEK</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+<script>
+    function redirectToLoginPage() {
+        window.location.href = '1loginPage.html';
+    }
+    function redirectToOwnLessonGiven() {
+        window.location.href = '17seventeenth.html';
+    }
+    function redirectToPointEditing() {
+        window.location.href = '18eighteenthPage.html';
+    }
+    function redirectToStudentsInformation() {
+        window.location.href = '13thirteenthPage.html';
+    }
+</script>
+</body>
+</html>

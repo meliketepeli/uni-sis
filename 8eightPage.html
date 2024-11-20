@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uni-Sis</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <header>
+    <h1>Uni-Sis</h1>
+    <nav>
+        <ul>
+            <li><a href="4fourthPage.html">Home</a></li>
+            <li><a href="9ninethPage.html">Academic Calendar</a></li>
+            <li><a href="10tenthPage.html">Course Schedule</a></li>
+        </ul>
+    </nav>
+    <section class="student-name">      
+        <div class="dropdown">
+            <img src="user.jpeg" width=35px; height=35px;>  
+            <h1>Student Name</h1>
+            <div class="dropdown-content">
+                <button onclick="redirectToLoginPage()">Logout</button>
+            </div>
+        </div>
+    </section>
+</header>
+<div class="small-menu">
+    <h3>Student</h3>
+    <button onclick="redirectToPersonalInformation()">My Page</button>
+    <button onclick="redirectToCurriculum()">My Curriculum</button>
+    <button onclick="redirectToWeeklySchedule()">My Weekly Schedule</button>
+    <button onclick="redirectToTranskript()">My Transcript</button>
+    <button onclick="redirectToCoursePools()">Course Pools</button>
+    <button onclick="redirectToRegistration()">Registration</button>
+</div>
+<main>
+    <div class="curriculum-slots">
+        <h1>Offered Course for Curriculum Slots</h1>
+        <div class="faculty-dropdown">
+            <label for="faculty-select">Select Faculty:</label>
+            <select id="faculty-select">
+                <option value="Computer Engineering">Computer Engineering</option>
+                <option value="Software Engineering">Software Engineering</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="Industrial Engineering">Industrial Engineering</option>
+                <option value="Electrical Electronics Engineering">Electrical Electronics Engineering</option>               
+            </select>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th> ECTS</th>
+                    <th> LOCAL CREDIT</th>
+                    <th>SLOT NAME</th>
+                    <th>COURSE NAME</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>ENGR4901</td>
+                    <td>INTRODUCTION TO DESIGN PROJECTS</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>COMP1007</td>
+                    <td>Introduction to Computer and Software Engineering</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>COMP4910</td>
+                    <td>Summer Practice II</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>COMP3910</td>
+                    <td>Summer Practice I</td>
+                </tr>
+                
+                <tr>
+                    <td> .</td>
+                    <td> .</td>
+                    <td> .</td>
+                    <td> .</td>
+                </tr>
+                <tr>
+                    <td> .</td>
+                    <td> .</td>
+                    <td> .</td>
+                    <td> .</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var facultyDropdown = document.getElementById('faculty-select');
+        facultyDropdown.addEventListener('change', function () {
+            alert('Selected Faculty: ' + facultyDropdown.value);
+        });
+    });
+    
+</script>
+<script>
+    function redirectToLoginPage() {
+        window.location.href = '1loginPage.html';
+    }
+    function redirectToPersonalInformation() {
+        window.location.href = '3thirdPage.html';
+    }
+    function redirectToCurriculum() {
+        window.location.href = '5fifthPage.html';
+    }
+    function redirectToWeeklySchedule() {
+        window.location.href = '6sixthPage.html';
+    }
+    function redirectToTranskript() {
+        window.location.href = '7seventhPage.html';
+    }
+    function redirectToCoursePools() {
+        window.location.href = '8eightPage.html';
+    }
+    function redirectToRegistration() {
+        window.location.href = '19nineteenthPage.html';
+    }
+</script>
+</body>
+</html>

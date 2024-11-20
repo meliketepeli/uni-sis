@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uni-Sis</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <header>
+    <h1>Uni-Sis</h1>
+    <nav>
+        <ul>
+            <li><a href="11eleventhPage.html">Home</a></li>
+            <li><a href="20twentiethPage.html">Academic Calendar</a></li>
+        </ul>
+    </nav>
+    <section class="student-name">      
+        <div class="dropdown">
+            <img src="user.jpeg" width=35px; height=35px;>  
+            <h1>Admin Name</h1>
+            <div class="dropdown-content">
+                <button onclick="redirectToLoginPage()">Logout</button>
+            </div>
+        </div>
+    </section>
+</header>
+<div class="small-menu">
+    <h3>Overview</h3>
+    <button onclick="redirectToStudentList()">Student List</button>
+    <button onclick="redirectToStudentInfo()">Students' Information</button>
+    <button onclick="redirectToUpdateStudent()">Updating Students</button>
+    <button onclick="redirectToUpdateLesson()">Updating Lessons</button>
+</div>
+<main>
+    <div class="admin-page">
+        <h1> </h1>
+        <div style="border: 5px solid black; width: 1200px; height: 400px;"></div>
+    </div>
+</main>
+<script>
+    function redirectToLoginPage() {
+        window.location.href = '1loginPage.html';
+    }
+    function redirectToStudentList() {
+        window.location.href = '12twelfthPage.html';
+    }
+    function redirectToStudentInfo() {
+        window.location.href = '13thirteenthPage.html';
+    }
+    function redirectToUpdateStudent() {
+        window.location.href = '14fourteenthPage.html';
+    }
+    function redirectToUpdateLesson() {
+        window.location.href = '15fifteenthPage.html';
+    }
+</script>
+</body>
+</html>

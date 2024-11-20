@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uni-Sis</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <header>
+    <h1>Uni-Sis</h1>
+    <nav>
+        <ul>
+            <li><a href="4fourthPage.html">Home</a></li>
+            <li><a href="9ninethPage.html">Academic Calendar</a></li>
+            <li><a href="10tenthPage.html">Course Schedule</a></li>
+        </ul>
+    </nav>
+    <section class="student-name">      
+        <div class="dropdown">
+            <img src="user.jpeg" width=35px; height=35px;>  
+            <h1>Student Name</h1>
+            <div class="dropdown-content">
+                <button onclick="redirectToLoginPage()">Logout</button>
+            </div>
+        </div>
+    </section>
+</header>
+
+<div class="small-menu">
+    <h3>Student Name</h3>
+    <button onclick="redirectToPersonalInformation()">Personal Information</button>
+    <button onclick="redirectToCurriculum()">My Curriculum</button>
+    <button onclick="redirectToWeeklySchedule()">My Weekly Schedule</button>
+    <button onclick="redirectToTranskript()">My Transcript</button>
+    <button onclick="redirectToRegistration()">Registration</button>   
+</div>
+
+<main>
+    <div class="point-editing">
+        <h1> Registration For Courses</h1>
+
+        <div class="student-dropdown">
+            <label for="student-select">Select Lesson:</label>
+            <select id="student-select">
+                <option value="ENGR4901">ENGR4901</option>
+                <option value="COMP1007">COMP1007</option>
+                <option value="COMP4910">COMP4910</option>
+                <option value="COMP3910">COMP3910</option>
+            </select>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th> ECTS</th>
+                    <th> LOCAL CREDIT</th>
+                    <th> SLOT NAME</th>
+                    <th> COURSE NAME</th>
+                    <th> DATE</th>
+                    <th> </th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1</td>
+                    <td> 1</td>
+                    <td> ENGR4901</td>
+                    <td> Introduction to Design Projects</td>
+                    <td> TH1-TH2-TH3</td>
+                    <td><button class="edit-button" onclick="editLesson('ENGR4901')">ADD</button></td>
+                </tr>
+                <tr>
+                    <td> 1</td>
+                    <td> 1</td>
+                    <td> COMP1007</td>
+                    <td> Introduction to Computer and Software Engineering</td>
+                    <td> T1-T2-T3</td>
+                    <td><button class="edit-button" onclick="editLesson('COMP1007')">ADD</button></td>
+                </tr>
+                <tr>
+                    <td> 1 </td>
+                    <td> 0</td>
+                    <td> COMP4910</td>
+                    <td> Summer Practice II</td>
+                    <td> -</td>
+                    <td><button class="edit-button" onclick="editLesson('COMP4910')">ADD</button></td>
+                </tr>
+
+                <tr>
+                    <td> 1 </td>
+                    <td> 0</td>
+                    <td> COMP3910</td>
+                    <td> Summer Practice I</td>
+                    <td> -</td>
+                    <td><button class="edit-button" onclick="editLesson('COMP3910')">ADD</button></td>
+                </tr>
+                
+                <tr>
+                    <td> 6 </td>
+                    <td> 4</td>
+                    <td> COMP1112</td>
+                    <td> OOP</td>
+                    <td> F4-F5-F6</td>
+                    <td><button class="edit-button" onclick="editLesson('COMP3910')">ADD</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="point-editing">
+        <h1>  </h1>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>08:30</th>
+                    <th>09:30</th>
+                    <th>10:30</th>
+                    <th>11:30</th>
+                    <th>12:30</th>
+                    <th>13:30</th>
+                    <th>14:30</th>
+                    <th>15:30</th>
+                    <th>16:30</th>
+                    <th>17:30</th>
+                    <th>18:30</th>
+                    <th>19:30</th>
+                    <th>20:30</th>
+                    <th>21:30</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <h1>  </h1>
+            <thead>
+                <tr>
+                    <th> ECTS</th>
+                    <th> LOCAL CREDIT</th>
+                    <th> SLOT NAME</th>
+                    <th> COURSE NAME</th>
+                    <th> </th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1</td>
+                    <td> 1</td>
+                    <td> ENGR4901</td>
+                    <td> Introduction to Design Projects</td>
+                    <td><button class="edit-button" onclick="deleteLesson('ENGR4901')">DELETE</button></td>
+                </tr>
+                <tr>
+                    <td> 1</td>
+                    <td> 1</td>
+                    <td> COMP1007</td>
+                    <td> Introduction to Computer and Software Engineering</td>
+                    <td><button class="edit-button" onclick="deleteLesson('COMP1007')">DELETE</button></td>
+                </tr>
+                <tr>
+                    <td> 1 </td>
+                    <td> 0</td>
+                    <td> COMP4910</td>
+                    <td> Summer Practice II</td>
+                    <td><button class="edit-button" onclick="deleteLesson('COMP4910')">DELETE</button></td>
+                </tr>
+
+                <tr>
+                    <td> 1 </td>
+                    <td> 0</td>
+                    <td> COMP3910</td>
+                    <td> Summer Practice I</td>
+                    <td><button class="edit-button" onclick="deleteLesson('COMP3910')">DELETE</button></td>
+                </tr>
+                <tr>
+                    <td> 6 </td>
+                    <td> 4</td>
+                    <td> COMP1112</td>
+                    <td> OOP</td>
+                    <td><button class="edit-button" onclick="deleteLesson('COMP3910')">DELETE</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</main>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var facultyDropdown = document.getElementById('student-select');
+
+        facultyDropdown.addEventListener('change', function () {
+            alert('Selected Student: ' + facultyDropdown.value);
+        });
+    });
+
+    function editLesson(lessonName) {
+        var lessonToEdit = document.querySelector('select[id="student-select"]').value;
+        var confirmation = confirm('Do you want to edit lesson: ' + lessonToEdit + '?');
+
+        if (confirmation) {
+            alert('Editing lesson: ' + lessonToEdit);
+        } else {
+            alert('Canceled editing lesson: ' + lessonToEdit);
+        }
+    }
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var facultyDropdown = document.getElementById('student-select');
+        facultyDropdown.addEventListener('change', function () {
+            alert('Selected Student: ' + facultyDropdown.value);
+        });
+    });
+
+    function deleteLesson(lessonName) {
+        var confirmation = confirm('Do you want to delete lesson: ' + lessonName + '?');
+        if (confirmation) {
+            alert('Deleted lesson: ' + lessonName);
+        } else {
+            alert('Canceled deletion of lesson: ' + lessonName);
+        }
+    }
+
+</script>
+<script>
+    function redirectToLoginPage() {
+        window.location.href = '1loginPage.html';
+    }
+    function redirectToPersonalInformation() {
+        window.location.href = '3thirdPage.html';
+    }
+    function redirectToCurriculum() {
+        window.location.href = '5fifthPage.html';
+    }
+    function redirectToWeeklySchedule() {
+        window.location.href = '6sixthPage.html';
+    }
+    function redirectToTranskript() {
+        window.location.href = '7seventhPage.html';
+    }
+    function redirectToRegistration() {
+        window.location.href = '19nineteenthPage.html';
+    }
+</script>
+</body>
+</html>
